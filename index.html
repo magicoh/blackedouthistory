@@ -1,33 +1,24 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
-  <head><script src="assets/js/color-modes.js"></script>
-
+  <head>
+    <script src="assets/js/color-modes.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Cover Template · Bootstrap v5.3</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
-
-    
-
+    <title>Blacked Out History</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="cover.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="shared.css" class="ref">
-
+    <link href="assets/css/cover.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared.css" class="ref">
   </head>
   <body class="d-flex h-100 text-center">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
       <header data-bs-theme="dark" style="opacity: 0;">
-        <nav class="navbar navbar-expand-md sticky-top border-bottom pb-3 mb-3" data-bs-theme="dark" style="">
+        <nav class="navbar navbar-expand-md sticky-top border-bottom pb-3 mb-3" data-bs-theme="dark">
           <div class="container">
             <a class="navbar-brand d-md-none" href="#">
               <img class="bi nav-logo" width="24" src="assets/brand/logo-book-light.svg" />
@@ -47,8 +38,8 @@
                     <img class="bi" width="24" src="assets/brand/logo-book-light.svg" />
                     
                   </a></li>
-                  <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./about">About</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./about">Mission</a></li>
                   <li class="nav-item"><a class="nav-link" href="./collections">Collections</a></li>
                   <li class="nav-item"><a class="nav-link" href="./exhibitions">Exhibitions</a></li>
                   <li class="nav-item"><a class="nav-link" href="./resources">Further Reading</a></li>
@@ -60,20 +51,25 @@
         </nav>
       </header>
 
-      <main class="px-0 mt-auto pt-5">
+      <main class="px-auto my-auto">
         
         <div id="homeFadeLogo" style="opacity:0;">
           <div class="d-none d-md-block -fade-logo">
-            <img src="assets/brand/logo-book-light-full.svg" style="max-width: 40%;margin-bottom: 10%;" />
+            <a href="./about">
+              <img src="assets/brand/logo-book-light-full.svg" style="max-width: 40%;" />
+            </a>
           </div>
 
           <div class="d-sm-block d-md-none -fade-logo">
-            <img src="assets/brand/logo-book-light-full.svg" style="max-width: 50%; margin-bottom: 15%;"/>
+            <a href="./about">
+              <img src="assets/brand/logo-book-light-full.svg" style="max-width: 50%;"/>
+            </a>
           </div>
+
         </div>
 
 
-        <figure class="text-end" id="homeFadeText" style="opacity: 0; padding-right: 5%;">
+        <figure class="text-end mt-4" id="homeFadeText" style="opacity: 0; padding-right: 5%;">
           <blockquote class="blockquote">
             <p>"...it is to history that we owe our frames of reference, our identities, and our aspirations."</p>
           </blockquote>
@@ -90,9 +86,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
       $(function() {
-        $("#homeFadeText").animate({opacity:1}, 3000, () => {
-          $("#homeFadeLogo").animate({opacity:1}, 2000);
-          $("header").animate({opacity:1}, 3000)
+        $("#homeFadeText").animate({opacity:1}, 2000, () => {
+          $("#homeFadeLogo").animate({opacity:1}, 1000);
+          $("header").animate({opacity:1}, 2000)
           
         });
       });
