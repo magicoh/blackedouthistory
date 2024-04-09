@@ -1,3 +1,10 @@
-body { background: #000111 !important;}
+body { 
+    background: #000000 !important; 
+    color: white !important;
+    --bs-body-color: #fff !important;
+}
 .nav-logo {position: relative; top:-3px; left:-10px;}
 .nav-item { list-style: none;}
+@media screen and (max-width:991px) {
+    
+}
